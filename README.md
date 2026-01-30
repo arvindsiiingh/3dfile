@@ -1,3 +1,5 @@
+Try it here: https://framer-3d-viewer.vercel.app/
+
 # 3D GLB Viewer
 
 Minimal static Three.js viewer — no framework. Fills viewport, loads a GLB model, OrbitControls, basic lighting.
