@@ -9,7 +9,7 @@ import { OrbitControls } from "https://esm.sh/three@0.169.0/examples/jsm/control
 import { GLTFLoader } from "https://esm.sh/three@0.169.0/examples/jsm/loaders/GLTFLoader.js";
 
 const GLB_PATH = "/bag.glb";
-const MODEL_SCALE = 2.5;
+const MODEL_SCALE = 3.5;
 
 // Auto-pan settings removed in favor of controls.autoRotate
 
@@ -64,7 +64,7 @@ loader.load(
     const size = box.getSize(new THREE.Vector3());
     model.position.sub(center);
     const maxDim = Math.max(size.x, size.y, size.z);
-    const dist = maxDim * 1.5;
+    const dist = maxDim * 1.2;
     camera.position.set(dist, dist * 0.8, dist);
     camera.lookAt(0, 0, 0);
     controls.update();
